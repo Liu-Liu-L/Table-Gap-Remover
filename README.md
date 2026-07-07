@@ -1,3 +1,9 @@
+<div align="center">
+
+**Language / 语言:** [English](README.md) · [中文](README.zh.md)
+
+</div>
+
 # Table Gap Remover
 
 Hide the blank line above tables (and below headings) in Obsidian **Live Preview** mode.
