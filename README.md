@@ -30,6 +30,14 @@ Copy the `table-gap-remover` folder into your vault's `.obsidian/plugins/` direc
 
 The plugin registers a CodeMirror 6 `ViewPlugin` that adds a `rhg-gap-line` decoration class to empty lines that sit between a heading and the next block, or directly above a table row. An `EditorView.theme` with maximum priority collapses those lines to zero height.
 
+## Demo
+
+Before (blank line above table is clickable and visible):
+
+![before](测试图片.png)
+
+After enabling Table Gap Remover, the gap disappears.
+
 ## License
 
 [MIT](./LICENSE)
