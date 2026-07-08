@@ -8,6 +8,8 @@
 
 Hide the blank line above tables in Obsidian **Live Preview** mode.
 
+> **Requires Obsidian 1.12.7 or higher.**
+
 ## Problem
 
 In Live Preview, a table (`| ... |`) always renders with an extra blank line above it. That line is clickable and visually distracting.
@@ -39,11 +41,23 @@ The plugin registers a CodeMirror 6 `ViewPlugin` that adds a `rhg-gap-line` deco
 
 Before (Table Gap Remover disabled — the blank line above the table is visible and clickable):
 
-![before](测试图片-未打开插件.png)
+![before](.\docs\测试图片-未打开插件.png)
 
 After enabling Table Gap Remover, the gap above the table disappears:
 
-![after](测试图片-打开插件.png)
+![after](.\docs\测试图片-打开插件.png)
+
+## Free & Open Source
+
+This plugin is **completely free** and released under the MIT license. There is **no payment required** to use it, and no features are locked behind a paywall.
+
+## Support the Development (Optional)
+
+If you find this plugin helpful and would like to **voluntarily** support its development, you may send a tip via WeChat. This is entirely optional — the plugin remains free for everyone.
+
+> ⚠️ **Voluntary donation** — this project is permanently free & open-source; no forced payment required. You may buy me a coffee to help cover servers, hardware, and ongoing development maintenance costs.
+
+<img src=".\docs\wx.jpg" width="200" alt="WeChat tip">
 
 ## License
 
