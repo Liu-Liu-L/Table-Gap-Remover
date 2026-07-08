@@ -43,11 +43,11 @@ The plugin registers a CodeMirror 6 `ViewPlugin` that adds a `rhg-gap-line` deco
 
 Before (Table Gap Remover disabled — the blank line above the table is visible and clickable):
 
-![before](.\docs\测试图片-未打开插件.png)
+![before](./docs/测试图片-未打开插件.png)
 
 After enabling Table Gap Remover, the gap above the table disappears:
 
-![after](.\docs\测试图片-打开插件.png)
+![after](./docs/测试图片-打开插件.png)
 
 ## Free & Open Source
 
@@ -59,7 +59,7 @@ If you find this plugin helpful and would like to **voluntarily** support its de
 
 > ⚠️ **Voluntary donation** — this project is permanently free & open-source; no forced payment required. You may buy me a coffee to help cover servers, hardware, and ongoing development maintenance costs.
 
-<img src=".\docs\wx.jpg" width="200" alt="WeChat tip">
+<img src="./docs/wx.jpg" width="200" alt="WeChat tip">
 
 ## License
 

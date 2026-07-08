@@ -43,11 +43,11 @@
 
 修复前（未开启 Table Gap Remover —— 表格上方的空行可见且可点击）：
 
-![before](.\docs\测试图片-未打开插件.png)
+![before](./docs/测试图片-未打开插件.png)
 
 启用 Table Gap Remover 后，表格上方的空行消失：
 
-![after](.\docs\测试图片-打开插件.png)
+![after](./docs/测试图片-打开插件.png)
 
 ## 完全免费
 
@@ -61,7 +61,7 @@
 >
 > 您可以请开发者喝一杯咖啡，资金全部用于服务器、硬件设备与版本迭代维护。
 
-<img src=".\docs\wx.jpg" width="200" alt="微信打赏">
+<img src="./docs/wx.jpg" width="200" alt="微信打赏">
 
 ## 许可证
 
