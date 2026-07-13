@@ -1,0 +1,20 @@
+{
+  "headingMarginTop": 10,
+  "headingMarginBottom": 10,
+  "paraMarginTop": 10,
+  "paraMarginBottom": 10,
+  "listMarginTop": 10,
+  "listMarginBottom": 10,
+  "tableMarginTop": 0,
+  "tableMarginBottom": 0,
+  "compactTable": true,
+  "livePreviewGap": true,
+  "tableBeauty": true,
+  "beautyHeaderColor": "#6c6800",
+  "beautyBorderColor": "#515151",
+  "beautyBorderWidth": 2,
+  "beautyBorderRadius": 6,
+  "headingBottom": 10,
+  "paraVertical": 10,
+  "tableGap": 0
+}
