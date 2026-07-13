@@ -1,1 +1,146 @@
-/* Styles are applied via CodeMirror 6 Decoration theme in main.js */
+/* ============================================================
+   Reading View (阅读模式) 的间距样式由 main.js 的 applyCSS()
+   动态注入到 <style id="rhg-rv-style"> 中（参数可在设置界面调整）
+
+   当前可配置项（每项独立上/下边距）：
+     - headingMarginTop / headingMarginBottom : 标题(h1/h2/h3) 间距
+     - paraMarginTop    / paraMarginBottom    : 段落(p/li) 间距
+     - tableMarginTop   / tableMarginBottom   : 表格间距
+   ============================================================ */
+
+/* ============================================
+   设置面板布局：顶部标签页切换（实时预览 | 阅读模式）
+   ============================================ */
+.rhg-sub {
+    color: var(--text-muted);
+    margin: 0 0 12px;
+}
+
+/* 标签栏 */
+.rhg-tab-nav {
+    display: flex;
+    border-bottom: 1px solid var(--background-modifier-border);
+    margin-bottom: 18px;
+    gap: 0;
+}
+.rhg-tab {
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    color: var(--text-muted);
+    font-size: var(--font-ui-medium);
+    padding: 8px 16px 6px;
+    cursor: pointer;
+    transition: color 0.15s, border-color 0.15s;
+    position: relative;
+    bottom: -1px;
+}
+.rhg-tab:hover {
+    color: var(--text-normal);
+}
+.rhg-tab-active {
+    color: var(--text-normal);
+    border-bottom-color: var(--interactive-accent);
+    font-weight: 600;
+}
+
+/* 内容面板 */
+.rhg-tab-content {
+    /* 容器，面板通过 class 切换 */
+}
+.rhg-hidden {
+    display: none !important;
+}
+.rhg-note {
+    color: var(--text-muted);
+    font-size: var(--font-ui-smaller);
+    margin: 16px 0 4px;
+    line-height: 1.5;
+}
+
+/* ============================================
+   间距配置表格（功能 | 上边距 | 下边距）
+   ============================================ */
+.rhg-gap-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 16px;
+}
+.rhg-gap-table th {
+    text-align: left;
+    color: var(--text-muted);
+    font-size: var(--font-ui-smaller);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 6px 8px;
+    border-bottom: 1px solid var(--background-modifier-border);
+}
+.rhg-gap-table td {
+    padding: 6px 4px;
+    vertical-align: middle;
+    border-bottom: 1px solid var(--background-modifier-border-hover);
+}
+.rhg-gap-table tr:last-child td {
+    border-bottom: none;
+}
+.rhg-label {
+    font-weight: 500;
+    white-space: nowrap;
+}
+.rhg-input {
+    width: 80px;
+    background: var(--background-modifier-form-field);
+    border: 1px solid var(--background-modifier-border);
+    color: var(--text-normal);
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-size: var(--font-ui-smaller);
+    text-align: center;
+    outline: none;
+}
+.rhg-input:focus {
+    border-color: var(--interactive-accent);
+    box-shadow: 0 0 0 2px var(--interactive-accent-hover);
+}
+
+/* 恢复默认按钮 */
+.rhg-reset-row {
+    margin-top: 16px;
+    padding-top: 12px;
+    border-top: 1px solid var(--background-modifier-border);
+}
+.rhg-reset-btn {
+    background: var(--background-modifier-error);
+    color: var(--text-on-accent);
+    border: none;
+    border-radius: 4px;
+    padding: 6px 16px;
+    font-size: var(--font-ui-smaller);
+    cursor: pointer;
+    transition: opacity 0.15s;
+}
+.rhg-reset-btn:hover {
+    opacity: 0.85;
+}
+
+/* ============================================
+   Live Preview (实时预览) - 由 main.js CodeMirror Decoration 处理
+   ============================================ */
+
+/* 表格美化：数字输入框（边框粗细 / 圆角半径） */
+.rhg-num-input {
+    width: 80px;
+    background: var(--background-modifier-form-field);
+    border: 1px solid var(--background-modifier-border);
+    color: var(--text-normal);
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-size: var(--font-ui-smaller);
+    text-align: center;
+    outline: none;
+}
+.rhg-num-input:focus {
+    border-color: var(--interactive-accent);
+    box-shadow: 0 0 0 2px var(--interactive-accent-hover);
+}
