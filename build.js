@@ -33,8 +33,8 @@ if (newVersion && newVersion !== manifest.version) {
 
 const { id, version } = manifest;
 
-// ---------- 收集要打包的文件 ----------
-const include = ['main.js', 'manifest.json', 'styles.css', 'README.md', 'README.zh.md', 'LICENSE', 'docs'];
+// ---------- 收集要打包的文件（最小安装集：manifest.json + main.js + styles.css）----------
+const include = ['manifest.json', 'main.js', 'styles.css'];
 const excludeNames = new Set(['.git', 'node_modules', 'dist', 'data.json', 'build.js']);
 
 const files = [];

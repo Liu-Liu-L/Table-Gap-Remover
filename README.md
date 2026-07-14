@@ -19,6 +19,16 @@ Fine-tune the spacing (margins) of headings, paragraphs, lists and tables in Obs
 - **Compact table** — column width adapts to content (`table-layout: auto`); can be forced per-note via the `[紧凑表格]` / `[宽松表格]` cssclasses.
 - **Table beautify** — customize border color / width / radius and header background color.
 
+## Demo
+
+Before (the gap above the table is visible and clickable):
+
+![before](./docs/测试图片-未打开插件.png)
+
+After enabling Spacing Control, the gap above the table disappears:
+
+![after](./docs/测试图片-打开插件.png)
+
 ## Installation
 
 ### From Community Plugins (once approved)
